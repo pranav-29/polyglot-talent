@@ -1,0 +1,25 @@
+.video {
+    position: relative;
+  }
+  
+  .centered-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  
+  .PlayIcon{
+    height: 25px;
+    width: 50px;
+    size: 12px;
+    background-color: rgba(11, 10, 10, 0.5);
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+  }
+
+  .PlayIcon:hover{
+    background-color: #ff0303;
+  }

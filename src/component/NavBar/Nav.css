@@ -1,0 +1,83 @@
+.nav {
+  position: fixed;
+  background-color: #ffffff;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 5px 10px rgb(172, 172, 172);
+}
+
+.nav_contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_logo {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+}
+
+.language  {
+  display: flex;
+  align-items: center;
+  font-size: x-large;
+  border-radius: 5px;
+  transition:  0.3s ease;
+}
+
+.language>span{
+  margin-left: 10px;
+}
+
+.language > select {
+  border: none;
+  outline: none;
+  font-size: x-large;
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.language:hover {
+  background-color: rgb(197, 194, 194);
+}
+
+body {
+  margin-top: 80px; 
+}
+
+@media screen and (max-width:400px) {
+  .nav_logo {
+    max-width: 100px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .language  {
+    font-size: large;
+  }
+
+  .language > select {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width:1260px) {
+  .nav_logo {
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .language  {
+    font-size: large;
+  }
+
+  .language > select {
+    font-size: large;
+  }
+}

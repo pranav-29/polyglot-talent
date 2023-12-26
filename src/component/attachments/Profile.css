@@ -1,0 +1,145 @@
+.profileCss{
+    position: sticky;
+    width: 100%;
+}
+
+.profile-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    border-radius: 10px;
+    justify-content: space-around;
+    overflow: auto;
+    align-items: center;
+    height: 40px auto;
+    background-color: white;
+}
+
+.profile-photo > img {
+    width: 200px;
+    height: 200px;
+}
+
+.headingsDetails{
+    color: #666666;
+}
+
+.headingsDetails>h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.headingsDetails>h3{
+    font-size: 20px;
+
+}
+
+.contactDetails{
+    font-size: 20px;
+}
+
+.mailContact>a, .website>a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #f14f54;
+}
+
+.mailContact>a>span, .website>a>span{
+    padding: 5px;
+    height: 20px;
+    color: #757575;
+    margin-right: 5px;
+    
+}
+
+
+.logoButton{
+    display: flex;
+}
+
+.linkedin, .mailButton {
+    padding: 5px;
+    margin: 10px;
+    height: 40px;
+    width: 40px; 
+    border-radius: 50%;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px rgb(172, 172, 172);
+}
+
+.linkedin{
+    background-color: rgb(45, 121, 175);
+    border: 2px solid rgb(45, 121, 175);
+}
+
+.linkedin:hover{
+    background-color:rgb(66, 142, 196) ;
+    border: 2px solid rgb(66, 142, 196) ;
+}
+
+.mailButton{
+    background-color: rgb(242, 93, 97);
+    border: 2px solid rgb(242, 93, 97); 
+}
+
+.mailButton:hover{
+    background-color:rgb(231, 118, 122) ;
+    border: 2px solid rgb(231, 118, 122) ;
+}
+
+.logo > img {
+    width: 300px;
+    height: auto;
+}
+
+.logo1>img{
+    display: none;
+}
+
+@media screen and (max-width: 930px) {
+    .logo{
+        display: none;
+    }
+    .logo1>img{
+        display: inline-block;
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .headingsDetails>h1{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    .headingsDetails>h3{
+        font-size: 15px;
+    
+    }
+    
+    .contactDetails{
+        font-size: 15px;
+    }
+
+    .mailContact>a, .website>a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #f14f54;
+}
+
+.mailContact>a>span, .website>a>span{
+    padding: 5px;
+    height: 20px;
+    color: #757575;
+    margin-right: 5px;
+    
+}
+}
